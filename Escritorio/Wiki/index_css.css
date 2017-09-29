@@ -71,4 +71,46 @@ body,header,nav,footer,aside,section,article{
 
 
 
-	
+		.proxmox{
+	width: 70%; 
+	height:30%;
+
+
+	}
+
+
+	.apache{
+		width: 70%; 
+		height:30%;
+
+
+	}
+
+	.github{
+		width: 70%; 
+		height:30%;
+
+	}
+
+	.proxmoxFooter{
+		padding: 2%;
+		background: -moz-linear-gradient(left, rgba(99,97,99,1) 0%, rgba(99,97,99,1) 9%, rgba(255,87,3,1) 53%, rgba(255,255,255,1) 100%);
+		max-height: 30px;
+
+
+	}
+
+	.apacheFooter{
+		padding: 2%;
+		
+		max-height: 30px;
+		background: -moz-linear-gradient(left, rgba(224,29,182,1) 0%, rgba(245,27,49,1) 29%, rgba(153,25,44,1) 56%, rgba(212,82,26,1) 85%, rgba(212,82,26,1) 100%);
+
+	}
+
+	.githubFooter{
+		padding: 2%;
+		background: -moz-linear-gradient(left, rgba(99,97,99,1) 0%, rgba(99,97,99,1) 9%, rgba(45,185,224,1) 53%, rgba(255,255,255,1) 100%);		max-height: 30px;
+
+
+	}
