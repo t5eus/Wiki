@@ -5,13 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="index_css.css">
+	<link rel="icon" type="image/png" href="img/icon.png">
 </head>
 <body>
 
 	<header>
-		<img src="img/proxmox.png">
+		<img class="imgHeader" src="img/proxmox.png">
 	</header>
-	<nav>
+	<nav id="navprox">
 		<ul>
 			<li class="estekak"><a href="index.html">Orri nagusia</a></li>
 			<li class="estekak">Proxmox</li>
@@ -23,11 +24,11 @@
 		<article id="art1">
 			<h3>Instalación de Proxmox en el servidor</h3>
 
-		<p>Se crea un pendrive booteable con Proxmox y se inicia el servidor con este conectado.
-		No funcionaba bien a la hora de empezar a montarse. Por lo cual, hemos recurrido a hacerlo con una disquetera externa con un CD.</p>
+		<p>Se crea un <b>pendrive booteable</b> con Proxmox y se inicia el servidor con este conectado.
+		No funcionaba bien a la hora de empezar a montarse. Por lo cual, hemos recurrido a hacerlo con una disquetera externa con <b>un CD</b>.</p>
 
 
-		<p>Al acabar la instalación e iniciar el servidor, nos conectamos con el usuario root y la contraseña que le hemos puesto.</p>
+		<p>Al acabar la instalación e iniciar el servidor, nos conectamos con el <b>usuario root</b> y la contraseña que le hemos puesto.</p>
 
 		<p>Iniciamos sesión en Ubuntu (desde nuestro ordenador) y hacemos:
  			<br>
@@ -44,18 +45,20 @@
 			apt-get update
 		</p>
 
-<p>Estos último pasos son simplemente para tener tanto el equipo como el servidor actualizados y al dia.</p>
+<p>Estos último pasos son simplemente para tener tanto el equipo como el servidor actualizados y al día.</p>
 
 
-<p>Probamos a hacer ping desde el servidor a una IP (8.8.8.8) por ejemplo para comprobar que está bien conectado a la red.
-Luego, hacemos ping desde el equipo a la puerta de enlace del servidor () para ver que estén conectados.</p>
+<p>Probamos a hacer <b>ping desde el servidor</b> a una <b>IP</b> (8.8.8.8) por ejemplo para comprobar que está bien conectado a la red.
+Luego, hacemos <b>ping desde el equipo</b> a la <b>puerta de enlace</b> del servidor (10.9.53.113 en nuestro caso) para ver que estén conectados.</p>
 
-<p>Entramos en el Proxmox desde el navegador escribiendo la IP del servidor y el puerto por el que nos conectaremos.</p>
+<p>Entramos en el Proxmox desde el navegador escribiendo la <b>IP del servidor</b> y el puerto por el que nos conectaremos.</p>
 
 		</article>
 		
-		<aside>
-			<p>aside</p>
+		<aside id="asideprox">
+			<h3>PROXMOX</h3>
+			<img class="asideimg" src="img/proxmoxlogo.png">
+			<h4>-><a href="https://www.proxmox.com/en/downloads">Deskargatu</a><-</h4>
 		</aside>
 	
 	</section>

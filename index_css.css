@@ -1,44 +1,73 @@
 
 body{
 	background-color: #B6B6B6;
-	margin: 5%;
+	margin: 8%;
+	margin-top: 5%;
 	text-align: center;
 }
 
 header{
 	background-color: white;
+	min-height: 70px;
+	width: 80%;
+	padding: 1%;
+	margin-right: 10%;
+	margin-left: 9%;
+	border-radius: 5px 20px;
 }
 
-body,header,nav,footer,aside,section,article{
+.imgHeader{
+	height: 15%;
+	width: 40%;
+	min-width: 200px;
+	max-width: 500px;
+	min-height: 70px;
+}
+
+header,nav,footer,aside,article{
 	border: 2px solid black;
 }
 
 	nav{
-		height: 50px;
+		height: 60px;
+		width: 80%;
+		margin-top: 2%;
+		margin-left: 10%;
+		margin-bottom: -3px;
 		text-align: center;
+		background-color: grey;
+		border-radius: 30px 30px 0px 0px;
 	}
-		.estekak{
-			display: inline;
-			list-style-type: none;
-			border: 2px solid black;
-			padding: 7px;
-	  		border-radius: 13px;	
-	  		background-color: white;
-	  		font:bold 20px cursive;	  		
-		}
-		.estekak:hover{
-			animation: anim 1s;
-			background-color: #FE8B19;
-		}
 
-		@keyframes anim {
-			10% {padding: 11px; margin:-4px;background-color: #FE8B19;}	
-		}
-			a{
-				text-decoration: none; 
-				color:black;
-				
-			}
+	#navprox{background-color: #fa9355;
+	}
+	#navgithub{background-color: #7ecdd6;
+	}
+	#navapache{background-color: #e35803;
+	}
+
+	li{
+		display: inline;
+		list-style-type: none;
+		border: 2px solid black;
+		padding: 7px;
+	 	border-radius: 13px;	
+	 	background-color: white;
+	  	font:bold 20px cursive;	  		
+	}
+	li:hover{animation: anim 1s; background-color: #FE8B19;
+	}
+	li.git:hover{animation: anim 1s; background-color: rgba(45,185,224,1);
+	}
+	li.apache:hover{animation: anim 1s;	background-color: rgba(245,27,49,1);
+	}
+
+	@keyframes anim {10% {padding: 11px; margin:-4px;}	
+	}
+			
+	li>a{text-decoration: none; 
+	  color:black;
+	}
 
 	section{
 		display: flex;
@@ -55,62 +84,64 @@ body,header,nav,footer,aside,section,article{
 		padding: 3%;
 		text-align: left;
 		background-color: white;
+		border-top-left-radius: 20px;
 	}
 	aside{
 		flex: 1;
 		display: inline-block;
-	
+		font:bold 15px cursive;	 
+		border-top-right-radius: 20px;
 	}
 
+	.asideimg{
+		width: 80%;
+	}
+	h4>a{
+		color:green;
+	}
+
+
+	#asideprox{animation: animProx 5s infinite;
+	}
+	@keyframes animProx {0% {background-color: #fa9355;}
+						 50%{background-color: white;}
+						 100%{background-color: #fa9355;}
+	}
+	#asidegit{animation: animGit 5s infinite;
+	}
+	@keyframes animGit {0% {background-color: #7ecdd6;}
+						50%{background-color: white;}
+						100%{background-color: #7ecdd6;}
+	}
+	#asideapache{animation: animapache 5s infinite;
+	}
+	@keyframes animapache {0% {background-color: #e35803;}
+						   50%{background-color: white;}
+						   100%{background-color: #e35803;}
+	}
+
+	
 	footer{
 		padding: 2%;
 		font-size: 13px;
 		background-color: #FE8B19;
-		max-height: 40px;
-	}
-
-
-
-		.proxmox{
-	width: 70%; 
-	height:30%;
-
-
-	}
-
-
-	.apache{
-		width: 70%; 
-		height:30%;
-
-
-	}
-
-	.github{
-		width: 70%; 
-		height:30%;
-
+		max-height: 45px;
+		font:bold 10px cursive;
+		border-radius: 0px 0px 25px 25px;
 	}
 
 	.proxmoxFooter{
-		padding: 2%;
-		background: -moz-linear-gradient(left, rgba(99,97,99,1) 0%, rgba(99,97,99,1) 9%, rgba(255,87,3,1) 53%, rgba(255,255,255,1) 100%);
-		max-height: 30px;
-
-
+		background: -moz-linear-gradient(left,  rgba(255,87,3,1) 0%, rgba(255,255,255,1) 100%);
+		background: -webkit-gradient(linear, 0% 100%, 100% 0%, from(rgba(255,87,3,1)), to(#ffffff));
 	}
 
-	.apacheFooter{
-		padding: 2%;
-		
-		max-height: 30px;
-		background: -moz-linear-gradient(left, rgba(224,29,182,1) 0%, rgba(245,27,49,1) 29%, rgba(153,25,44,1) 56%, rgba(212,82,26,1) 85%, rgba(212,82,26,1) 100%);
 
+	.apacheFooter{
+		background: -moz-linear-gradient(left, rgba(224,29,182,1) 0%, rgba(245,27,49,1) 29%, rgba(153,25,44,1) 56%, rgba(212,82,26,1) 85%, rgba(212,82,26,1) 100%);
+		background: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#e35803), to(#d3156d));
 	}
 
 	.githubFooter{
-		padding: 2%;
 		background: -moz-linear-gradient(left, rgba(99,97,99,1) 0%, rgba(99,97,99,1) 9%, rgba(45,185,224,1) 53%, rgba(255,255,255,1) 100%);		max-height: 30px;
-
-
+		background: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#323232), to(rgba(45,185,224,1)));
 	}

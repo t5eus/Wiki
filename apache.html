@@ -5,37 +5,41 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="index_css.css">
+	<link rel="icon" type="image/png" href="img/icon.png">
 </head>
 <body>
-
 	<header>
-		<img class="apache" src="img/apache2.png">
+		<img class="imgHeader" src="img/apache2.png">
 	</header>
-	<nav>
+	<nav id="navapache">
 		<ul>
-			<li class="estekak"><a href="index.html">Orri nagusia</a></li>
-			<li class="estekak"><a href="proxmox.html">Proxmox</a></li>
-			<li class="estekak">Apache</li>	
-			<li class="estekak"><a href="github.html">gitHub</a></li>	
+			<li class="apache"><a href="index.html">Orri nagusia</a></li>
+			<li class="apache"><a href="proxmox.html">Proxmox</a></li>
+			<li class="apache">Apache</li>	
+			<li class="apache"><a href="github.html">GitHub</a></li>	
 		</ul>
 	</nav>
 	<section>
 		<article id="art1">
-			article
+			<h3>Historia</h3>
+			<p>Hasiera batean, existitzen zen web zerbitzari bakarra CERN-eko httpd izan zen. Horren ostean, beste batzuk agertzen hasiko ziren, NCSA-eko httpd bezala, Illinois unibertsitatekoa. Produktu ona zenez, programatzaile ezberdinak partxeak eta funtzionaltasun berriak sortzen hasi ziren, produktu onari jarraipena emanez. Horrela, partxez egindako web zerbitzaria sortu zen, “a patchy server”. Apache jaio zen. Esan daiteke, software librearen funtzionamenduaren eta onuren adibiderik garbienetarikoa dela Apache.</p>
+			<h3>Web orrialdeen kokapena</h3>
+			<p>Kokapena ezberdina izan daiteke, /var/www edo /srv/www edo baliteke beste banakeran batean beste leku batean egotea. www barruan htdocs izeneko karpeta egoten da, eta hor kokatu behar dira webguneko fitxategiak.
+			</p>
+			<p>
+			Beraz, apache2 paketea instalatzen bada, /srv/www/htdocs karpetan index.html izeneko html formatuko fitxategi bat uzten bada eta httpd demonioa martxan jartzen bada, web zerbitzaria funtzionamenduan egongo da. Hurrengo urratsa funtzionamendu hori txukuntzea da.
+			</p>
+			<p>
+			Konfigurazio fitxategi nagusia apache2 zerbitzarian /etc/apache2/httpd.conf da, nahiz eta Ubuntu Linuxen /etc/apache2/apache2.conf izan. Bertsioak bertsio, beti egongo da desberdintasunen bat banaketa eta bertsioaren arabera, baina Linux-ekin trebatu ahala, diferentzia hauek gero eta txikiagoak izango dira. </p>	
 		</article>
-		<aside>
-		<p>aside</p>
+		<aside id="asideapache">
+			<h3>APACHE</h3>
+			<img class="asideimg" src="img/apachelogo.png">
+			<h4>-><a href="https://www.apache.org/">Orrialde ofiziala</a><-</h4>
 		</aside>
 	</section>
 	<footer class="apacheFooter">
-	<p>footer<p>
-
+		<p>&copy Orrialde hau T5 taldea egin du. Partaideak hurrengoak dira: Jon Bahillo, Iñaki Elezkano eta Pedro Rodríguez</p>
 	</footer>
-
-
-
-
-
-	
 </body>
 </html>

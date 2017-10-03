@@ -5,38 +5,70 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="index_css.css">
+	<link rel="icon" type="image/png" href="img/icon.png">
 </head>
 <body>
 
 	<header>
-		<img class="github" src="img/github2.png">
+		<img class="imgHeader" src="img/github2.png">
 	</header>
-	<nav>
+	<nav id="navgithub">
 		<ul>
-			<li class="estekak"><a href="index.html">Orri nagusia</a></li>
-			<li class="estekak"><a href="proxmox.html">Proxmox</a></li>
-			<li class="estekak"><a href="apache.html">Apache</a></li>
-			<li class="estekak">GitGub</li>
+			<li class="git"><a href="index.html">Orri nagusia</a></li>
+			<li class="git"><a href="proxmox.html">Proxmox</a></li>
+			<li class="git"><a href="apache.html">Apache</a></li>
+			<li class="git">GitHub</li>
 		</ul>
 	</nav>
 	<section>
 		<article id="art1">
-			article
+			<h3>GIT</h3>
+			<p>
+			Git bertsio-kontrol software bat da; hain zuzen, produktu edo konfigurazio batean egin daitezkeen aldaketak kudeatzeko programa da.
+			</p>
+			<h3>GIT-HUB</h3>
+			<p>
+			Talde-proiektuak antolatu eta egin ditzakezun plataforma da. Idatzizko kode guztia publikoki gordetzen da. Pribatua izateko, ordaindu beharko zenuke.
+			
+			</p>
+			<h3>Configurar Git</h3>
+			<p>
+
+			Instalar: 
+			<br> sudo apt-get install git.
+			<br>
+			Iniciar git: 
+			<br>git init
+			
+			
+
+			Subir los cambios:<br> git add.
+			<br> 
+	
+			Consolidar: <br>git commit -m “T5- primera consolidación” <br>
+			<br>
+
+			Meter email: <br>
+			git config --global user.email pedrorodri983@gmail.com.<br>
+			<br>
+
+			Conectar: <br>git remote add origin https://github.com/Pedro2dw3/Wiki.<br>
+			<br>
+
+			Subir: <br>git push -u origin https://github.com/Pedro2dw3/Wiki.
+			</p>
+
 		</article>
-		<aside>
-		<p>aside</p>
+		<aside id="asidegit">
+			<h3>GITHUB</h3>
+			<img class="asideimg" src="img/githublogo.png">
+			<h4>-><a href="https://github.com/">Orrialde ofiziala</a><-</h4>
 		</aside>
 	</section>
 	
 	<footer class="githubFooter">
-
-	<p>footer<p>
-
+		<p>&copy Orrialde hau T5 taldea egin du. Partaideak hurrengoak dira: Jon Bahillo, Iñaki Elezkano eta Pedro Rodríguez</p>
 	</footer>
 
-
-
-
-	
 </body>
 </html>
