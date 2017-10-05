@@ -3,9 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="ordenagailu.css">
+	<title>T5-GitHub</title>
 	
+	<link rel="stylesheet" type="text/css" href="ordenagailu.css"
+	 media="only screen and (max-width: 2000px)"/>
+
 	<link rel="icon" type="image/png" href="img/icon.png">
 	
 	<link rel="stylesheet" media="(max-width: 800px)" href="tablet.css" />
@@ -23,56 +25,76 @@
 			<li class="git"><a href="index.html">Orri nagusia</a></li>
 			<li class="git"><a href="proxmox.html">Proxmox</a></li>
 			<li class="git"><a href="apache.html">Apache</a></li>
-			<li class="git">GitHub</li>
+			<li class="git"><a href="">GitHub</a></li>
 		</ul>
 	</nav>
 	<section>
 		<article id="art1">
-			<h3>GIT</h3>
+			<h3>Zer da GIT?</h3>
 
-			<p>Git bertsio-kontrol software bat da; hain zuzen, produktu edo konfigurazio batean egin daitezkeen aldaketak kudeatzeko programa da.</p>
+					<p>Git <b>bertsio-kontrol software</b> bat da; hain zuzen, produktu edo konfigurazio batean egin daitezkeen aldaketak kudeatzeko programa da.</p>
 
-			<h3>GIT-HUB</h3>
+			
 
-			<p>Talde-proiektuak antolatu eta egin ditzakezun plataforma da. Idatzizko kode guztia publikoki gordetzen da. Pribatua izateko, ordaindu beharko zenuke.</p>
+			<h3>Zer da GitHub?</h3>
+
+					<p>Talde-proiektuak antolatu eta egin ditzakezun <b>plataforma</b> da. Idatzizko kode guztia publikoki gordetzen da. Pribatua izateko, ordaindu beharko zenuke.</p>
+
+			
 
 			<h3>Configurar Git</h3>
 			
 		
-			<b>Instalar:</b>
-			<p>&emsp; sudo apt-get install git.</p>
+					<b>Lo instalamos:</b>
+					<p>&emsp; sudo apt-get install git</p>
 
-			<b>Iniciar git:</b>
-			<p>&emsp; git init</p>
-		
+					<b>Lo iniciamos:</b>
+					<p>&emsp; git init</p>
+				
 
-			<b>Subir los cambios:</b>
-			<p>&emsp; git add.</p>
+					<b>Subir los cambios:</b>
+					<p>&emsp; git add .</p>
+					
 			
-	
-			<b>Consolidar: </b>
-			<p>&emsp; git commit -m “T5- primera consolidación” </p>
-			
+					<b>Consolidar: </b>
+					<p>&emsp; git commit -m “NombreConsolidación” </p>
+					
 
-			<b>Meter email:</b>
-			<p>&emsp; git config --global user.email pedrorodri983@gmail.com.</p>
-			
+					<b>Enlazamos el GitHub con nuestro correo:</b>
+					<p>&emsp; git config --global user.email pedrorodri983@gmail.com</p>
+					
 
-			<b>Conectar:</b> 
-			<p>&emsp; git remote add origin https://github.com/Pedro2dw3/Wiki.</p>
-			
+					<b>Enlazamos la carpeta del git init con el repositorio de nuestro GitHub:</b> 
+					<p>&emsp; git remote add origin https://github.com/Pedro2dw3/Wiki</p>
+					
 
-			<b>Subir: </b>
-			<p>&emsp; git push -u origin master.</p>
-			
-			<b>Descargar: </b>
-			<p>&emsp; git pull origin master.</p>
+					<b>Subimos los archivos: </b>
+					<p>&emsp; git push -u origin master</p>
+					
+					<b>Para descargarnos los archivos ya subidos: </b>
+					<p>&emsp; git pull origin master</p>
+
+			<h3>Otros comandos:</h3>
+
+					<b>Descargar el repositorio entero:</b> 
+					<p>&emsp; git clone https://github.com/Pedro2dw3/Wiki.git</p>
+
+					<b>Ver la consolidaciones hechas: </b>
+					<p>&emsp; git log</p>
+
+					<b>Ver si se ha hecho algún cambio: </b>
+					<p>&emsp; git status</p>
+
+					<b>Subir los cambios de solo un archivo:</b>
+					<p>&emsp; git add archivo.txt</p>
+
+
 
 		</article>
 		<aside id="asidegit">
 			<h3>GITHUB</h3>
 			<img class="asideimg" src="img/githublogo.png">
-			<h4>-><a href="https://github.com/">Orrialde ofiziala</a><-</h4>
+			<h4><a href="https://github.com/">Orrialde ofiziala</a></h4>
 		</aside>
 	</section>
 	

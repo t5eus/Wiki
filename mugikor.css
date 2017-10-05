@@ -55,6 +55,9 @@ header,nav,footer,aside,article{
 	 	background-color: white;
 	  	font:bold 11px cursive;	  		
 	}
+	
+	li.index:hover{animation: anim 1s;	background-color: #229954 ;
+	}
 	li:hover{animation: anim 1s; background-color: #FE8B19;
 	}
 	li.git:hover{animation: anim 1s; background-color: rgba(45,185,224,1);
@@ -101,6 +104,12 @@ header,nav,footer,aside,article{
 		color:green;
 	}
 
+	#asideindex{animation: animindex 5s infinite;
+	}
+	@keyframes animindex {0% {background-color: #28B463;}
+						   50%{background-color: white;}
+						   100%{background-color: #28B463;}
+	}
 
 	#asideprox{animation: animProx 5s infinite;
 	}

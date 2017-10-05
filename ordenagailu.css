@@ -80,11 +80,9 @@ header,nav,footer,aside,article{
 	
 	#art1, aside{
 		display: inline-block;
-		padding-top: 2%;
 	}
 
 	#art1{
-		flex:4;
 		padding: 3%;
 		text-align: left;
 		background-color: white;
@@ -108,6 +106,12 @@ header,nav,footer,aside,article{
 		color:green;
 	}
 
+	#asideindex{animation: animindex 5s infinite;
+	}
+	@keyframes animindex {0% {background-color: #28B463;}
+						   50%{background-color: white;}
+						   100%{background-color: #28B463;}
+	}
 
 	#asideprox{animation: animProx 5s infinite;
 	}
@@ -127,13 +131,6 @@ header,nav,footer,aside,article{
 						   50%{background-color: white;}
 						   100%{background-color: #e35803;}
 	}
-	#asideindex{animation: animapache 5s infinite;
-	}
-	@keyframes animapache {0% {background-color: #28B463;}
-						   50%{background-color: white;}
-						   100%{background-color: #28B463;}
-	}
-
 	
 	footer{
 		padding: 2%;

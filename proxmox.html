@@ -3,12 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>T5-Proxmox</title>
 	
 	<link rel="stylesheet" type="text/css" href="ordenagailu.css"
 	 media="only screen and (max-width: 2000px)"/>
 
-	<link rel="stylesheet" media="(max-width: 1000px)" href="tablet.css" />
+	<link rel="stylesheet" media="(max-width: 800px)" href="tablet.css" />
 
 	<link rel="stylesheet" media="(max-width: 400px)" href="mugikor.css" />
 
@@ -29,41 +29,50 @@
 	</nav>
 	<section>
 		<article id="art1">
-			<h3>Instalación de Proxmox en el servidor</h3>
-
-		<p>Se crea un <b>pendrive booteable</b> con Proxmox y se inicia el servidor con este conectado.
-		No funcionaba bien a la hora de empezar a montarse. Por lo cual, hemos recurrido a hacerlo con una disquetera externa con <b>un CD</b>.</p>
-
-
-		<p>Al acabar la instalación e iniciar el servidor, nos conectamos con el <b>usuario root</b> y la contraseña que le hemos puesto.</p>
-
-		<p>Iniciamos sesión en Ubuntu (desde nuestro ordenador) y hacemos:</p>
- 			
- 			<p>&emsp; apt-get upgrade</p>
- 			<p>&emsp; apt-get update</p>
- 		
-
-
-		<p>Iniciamos sesión en el servidor y hacemos:</p>
 			
-			<p>&emsp; apt-get upgrade</p>
-			<p>&emsp; apt-get update</p>
+		<h3>¿Qué es Proxmox?</h3>
+
+			<p>Proxmox es un <b>entorno de virtualización</b> de servidor de código abierto el cual nos permite el despliegue y la gestión de máquinas virtuales y contenedores.</p>
+
+
+		<h3>Instalación de Proxmox en el servidor</h3>
+
+			<p>Se crea un <b>pendrive booteable</b> con Proxmox y se inicia el servidor con este conectado.
+			No funcionaba bien a la hora de empezar a montarse. Por lo cual, hemos recurrido a hacerlo con una disquetera externa y <b>un CD</b>.</p>
+
+
+			<p>Al acabar la instalación e iniciar el servidor, nos conectamos con el <b>usuario root</b> y la contraseña que le hemos puesto.</p>
+
+			<p>Iniciamos sesión en Ubuntu (desde nuestro ordenador) y hacemos:</p>
+ 			
+ 			<i>&emsp; apt-get upgrade<br>
+ 			&emsp; apt-get update</i>
+ 		
+			<p>Iniciamos sesión en el servidor y hacemos:</p>
+			
+			<i>&emsp; apt-get upgrade<br>
+			&emsp; apt-get update</i>
 		
 
-<p>Estos último pasos son simplemente para tener tanto el equipo como el servidor actualizados y al día.</p>
+			<p>Estos último pasos son simplemente para tener tanto el equipo como el servidor actualizados y al día.</p>
 
 
-<p>Probamos a hacer <b>ping desde el servidor</b> a una <b>IP</b> (8.8.8.8) por ejemplo para comprobar que está bien conectado a la red.
-Luego, hacemos <b>ping desde el equipo</b> a la <b>puerta de enlace</b> del servidor (10.9.53.113 en nuestro caso) para ver que estén conectados.</p>
+			<p>Probamos a hacer <b>ping desde el servidor</b> a una <b>IP</b> (8.8.8.8) por ejemplo para comprobar que está bien conectado a la red.<br>
+			Luego, hacemos <b>ping desde el equipo</b> a la <b>puerta de enlace</b> del servidor (10.9.53.113 en nuestro caso) para ver que estén conectados.</p>
 
-<p>Entramos en el Proxmox desde el navegador escribiendo la <b>IP del servidor</b> y el puerto por el que nos conectaremos.</p>
+			<p>Entramos en el Proxmox desde el navegador escribiendo la <b>IP del servidor</b> y el puerto por el que nos conectaremos.</p>
+
+			<p>Instalaremos en el servidor un <b>Ubuntu Server</b> usando una <b>plantilla</b> (Sin usar una ISO).
+			Esta plantilla la descargaremos.
+			Cuando esté instalado, instalaremos el <a>Apache</a> en él.</p>
+
 
 		</article>
 		
 		<aside id="asideprox">
 			<h3>PROXMOX</h3>
 			<img class="asideimg" src="img/proxmoxlogo.png">
-			<h4>-><a href="https://www.proxmox.com/en/downloads">Deskargatu</a><-</h4>
+			<h4><a href="https://www.proxmox.com/en/downloads">Deskargatu</a></h4>
 		</aside>
 	
 	</section>
