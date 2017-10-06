@@ -1,11 +1,4 @@
-
-body{
-	background-color: #B6B6B6;
-	margin: 6%;
-	margin-top: 5%;
-	text-align: center;
-}
-
+/*Goiburua---------------------------------*/
 header{
 	background-color: white;
 	min-height: 70px;
@@ -15,47 +8,69 @@ header{
 	margin-left: 9%;
 	border-radius: 5px 20px;
 }
-
+/*Tituluko argazkia*/
 .imgHeader{
 	height: 15%;
-	width: 90%;
-	min-width: 200px;
-	max-width: 500px;
+	width: 80%;
+	min-width: 150px;
 	min-height: 70px;
+	max-height: 80px;
+}
+/*GORPUTZA--------------------------------------*/
+body{
+	background-color: #B6B6B6;
+	margin: 5%;
+	text-align: center;
+	font-size: 12px;
 }
 
+/*BORDEAK*/
 header,nav,footer,aside,article{
 	border: 2px solid black;
 }
-
+	/*NABIGATZAILEA-------------------------------------*/
 	nav{
-		height: 60px;
-		width: 80%;
+		height: 40px;
+		width: 88%;
 		margin-top: 2%;
-		margin-left: 8%;
-		margin-bottom: -3px;
+		margin-bottom: -2px;
+		margin-left: 5%;
+		margin-right: 4%;
 		text-align: center;
-		background-color: grey;
-		border-radius: 30px 30px 0px 0px;
+		border-radius: 20px 20px 0px 0px;
+		padding-bottom: 1%;
 	}
 
+	/*NABIGATZAILEAREN KOLOREAK*/
 	#navprox{background-color: #fa9355;
 	}
 	#navgithub{background-color: #7ecdd6;
 	}
 	#navapache{background-color: #e35803;
 	}
+	#navindex{background-color: #28B463;
+	}
+	/*BOTOIAK*/
+	ul{
+		padding: 0px;
+	}
 
 	li{
 		display: inline;
 		list-style-type: none;
 		border: 2px solid black;
-		padding: 3px;
+		padding: 2px;
 	 	border-radius: 13px;	
 	 	background-color: white;
-	  	font:bold 11px cursive;	  		
+	  	font:bold 8px cursive;	
+	  	margin: 0px;
+	}
+
+	li>a{
+	  	color:black;
 	}
 	
+	/*BOTOIEN ANIMAZIOA*/
 	li.index:hover{animation: anim 1s;	background-color: #229954 ;
 	}
 	li:hover{animation: anim 1s; background-color: #FE8B19;
@@ -67,50 +82,51 @@ header,nav,footer,aside,article{
 
 	@keyframes anim {10% {padding: 6px; margin:-3px;}	
 	}
-			
-	li>a{
-	  color:black;
-	}
 
-	section{
-		display: flex;
-	}
 	
-	
-	#art1, aside{
-		display: inline-block;
-		padding-top: 2%;
-	}
 
-	#art1{
-		flex:4;
+	/*KUTXAK*/
+
+	article{
 		padding: 3%;
 		text-align: left;
 		background-color: white;
 		border-top-left-radius: 20px;
-	}
-	aside{
-		flex: 1;
-		display: inline-block;
-		font:bold 13px cursive;	 
-		border-top-right-radius: 20px;
-		padding: 3px;
+		min-width: 100px;
 	}
 
+	/*ARGAZKIEN HANDITZEA*/
+
+	.argazki:hover{ 
+    	-webkit-transform: scale(2);
+    	transform: scale(2);
+    	margin-left: 37%; 
+	}
+
+
+	/*ASIDE--------------------------------------------------*/	
+	aside{
+		position: relative;
+		font-family: cursive;	font-size:10px;
+		border-top-right-radius: 20px;
+		padding: 3px;
+		z-index: -3;
+	}
+	/*ASIDE-KO ARGAZKIA*/
 	.asideimg{
 		width: 80%;
 	}
 	h4>a{
 		color:green;
 	}
-
+	
+	/*ASIDE-AREN ANIMAZIOAK*/
 	#asideindex{animation: animindex 5s infinite;
 	}
 	@keyframes animindex {0% {background-color: #28B463;}
 						   50%{background-color: white;}
 						   100%{background-color: #28B463;}
 	}
-
 	#asideprox{animation: animProx 5s infinite;
 	}
 	@keyframes animProx {0% {background-color: #fa9355;}
@@ -130,14 +146,17 @@ header,nav,footer,aside,article{
 						   100%{background-color: #e35803;}
 	}
 
-	
+	/*ORRI-OINA-----------------------------------------------*/
 	footer{
-		padding: 2%;
-		font-size: 13px;
+		padding-top: 0%;
 		background-color: #FE8B19;
 		max-height: 45px;
-		font:bold 10px cursive;
+		font:bold 8px cursive;
 		border-radius: 0px 0px 25px 25px;
+	}
+	.indexFooter{
+		background: -moz-linear-gradient(left, rgba(40,180,99,1) 0%, rgba(74,230,139,1) 50%, rgba(140,255,188,1) 68%, rgba(255,255,255,1) 100%);
+		background: -webkit-linear-gradient(left, rgba(40,180,99,1) 0%, rgba(74,230,139,1) 50%, rgba(140,255,188,1) 68%, rgba(255,255,255,1) 100%);
 	}
 
 	.proxmoxFooter{

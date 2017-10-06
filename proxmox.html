@@ -3,10 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>T5-Proxmox</title>
+	<title></title>
 	
-	<link rel="stylesheet" type="text/css" href="ordenagailu.css"
-	 media="only screen and (max-width: 2000px)"/>
+	<link rel="stylesheet" media="(min-width: 800px)"  type="text/css" href="ordenagailu.css">
 
 	<link rel="stylesheet" media="(max-width: 800px)" href="tablet.css" />
 
@@ -22,7 +21,7 @@
 	<nav id="navprox">
 		<ul>
 			<li class="estekak"><a href="index.html">Orri nagusia</a></li>
-			<li class="estekak">Proxmox</li>
+			<li class="estekak"><a href="">Proxmox</a></li>
 			<li class="estekak"><a href="apache.html">Apache</a></li>
 			<li class="estekak"><a href="github.html">GitHub</a></li>
 		</ul>
@@ -40,31 +39,40 @@
 			<p>Se crea un <b>pendrive booteable</b> con Proxmox y se inicia el servidor con este conectado.
 			No funcionaba bien a la hora de empezar a montarse. Por lo cual, hemos recurrido a hacerlo con una disquetera externa y <b>un CD</b>.</p>
 
+			<p>Al arrancar desde el CD elegimos la opción:</p>
+			<img class="argazki" src="img/screen0.png">
 
-			<p>Al acabar la instalación e iniciar el servidor, nos conectamos con el <b>usuario root</b> y la contraseña que le hemos puesto.</p>
+			<p>Luego, asignamos el dominio, la IP, la puerta de enlace, y el DNS del servidor:</p>
 
-			<p>Iniciamos sesión en Ubuntu (desde nuestro ordenador) y hacemos:</p>
+			<img class="argazki" src="img/screen1.png">
+
+			<p>Al acabar la instalación e iniciar el servidor, nos hemos conectado con el <b>usuario root</b> y la contraseña que le hemos puesto.</p>
+
+			<gris><p>Iniciamos sesión en Ubuntu (desde nuestro ordenador) y hacemos:</p>
  			
- 			<i>&emsp; apt-get upgrade<br>
- 			&emsp; apt-get update</i>
+ 			<i>&emsp;&emsp; apt-get upgrade<br>
+ 			&emsp;&emsp; apt-get update</i>
  		
 			<p>Iniciamos sesión en el servidor y hacemos:</p>
 			
-			<i>&emsp; apt-get upgrade<br>
-			&emsp; apt-get update</i>
+			<i>&emsp;&emsp; apt-get upgrade<br>
+			&emsp;&emsp; apt-get update</i>
 		
 
-			<p>Estos último pasos son simplemente para tener tanto el equipo como el servidor actualizados y al día.</p>
-
+			<p>Estos último pasos son simplemente para tener tanto el equipo como el servidor actualizados y al día.</p></gris>
 
 			<p>Probamos a hacer <b>ping desde el servidor</b> a una <b>IP</b> (8.8.8.8) por ejemplo para comprobar que está bien conectado a la red.<br>
 			Luego, hacemos <b>ping desde el equipo</b> a la <b>puerta de enlace</b> del servidor (10.9.53.113 en nuestro caso) para ver que estén conectados.</p>
 
-			<p>Entramos en el Proxmox desde el navegador escribiendo la <b>IP del servidor</b> y el puerto por el que nos conectaremos.</p>
+			<p>Entramos en el Proxmox desde el navegador escribiendo la <b>IP del servidor</b> y el puerto por el que nos conectaremos (en nuestro caso 10.9.53.113:8006)</p>
 
-			<p>Instalaremos en el servidor un <b>Ubuntu Server</b> usando una <b>plantilla</b> (Sin usar una ISO).
-			Esta plantilla la descargaremos.
-			Cuando esté instalado, instalaremos el <a>Apache</a> en él.</p>
+			<img class="argazki" src="img/screen2.png">
+
+			<p>Instalaremos en el servidor un <b>Ubuntu Server</b> usando una <b>plantilla</b> (Sin usar una ISO):</p>
+
+			<img class="argazki" src="img/screen3.png">
+
+			<p>Cuando esté instalado, instalamos el <a id="aphref" href="apache.html">Apache</a> en él.</p>
 
 
 		</article>
@@ -80,9 +88,6 @@
 	<footer class="proxmoxFooter">
 		<p>&copy Orrialde hau T5 taldea egin du. Partaideak hurrengoak dira: Jon Bahillo, Iñaki Elezkano eta Pedro Rodríguez</p>
 	</footer>
-
-
-
 
 
 	

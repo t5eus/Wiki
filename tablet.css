@@ -1,11 +1,13 @@
 
+/*GORPUTZA--------------------------------------*/
 body{
 	background-color: #B6B6B6;
 	margin: 8%;
 	margin-top: 5%;
 	text-align: center;
+	font-size: 16px;
 }
-
+/*Goiburua---------------------------------*/
 header{
 	background-color: white;
 	min-height: 70px;
@@ -15,9 +17,7 @@ header{
 	margin-left: 9%;
 	border-radius: 5px 20px;
 }
-
 /*Tituluko argazkia*/
-
 .imgHeader{
 	height: 15%;
 	width: 40%;
@@ -25,50 +25,50 @@ header{
 	max-width: 500px;
 	min-height: 70px;
 }
-
-
-
-/*Bordeak*/
-
+/*BORDEAK*/
 header,nav,footer,aside,article{
 	border: 2px solid black;
 }
-
-/*NABIGATZAILEA-------------------------------------------------------------------*/
-	
+/*NABIGATZAILEA-------------------------------------*/
 	nav{
-		height: 60px;
-		width: 80%;
+		height: 45px;
+		width: 88%;
 		margin-top: 2%;
-		margin-left: 10%;
-		margin-bottom: -3px;
+		margin-bottom: -4px;
+		margin-left: 5%;
+		margin-right: 4%;
 		text-align: center;
-		background-color: grey;
-		border-radius: 30px 30px 0px 0px;
+		border-radius: 20px 20px 0px 0px;
+		padding-bottom: 1%;
 	}
-
-
-	/*NABIGATZAILEAREN BOTOIEN KOLOREAK*/
-	
+	/*NABIGATZAILEAREN KOLOREAK*/
 	#navprox{background-color: #fa9355;
 	}
 	#navgithub{background-color: #7ecdd6;
 	}
 	#navapache{background-color: #e35803;
 	}
+	#navindex{background-color: #28B463;
+	}
 
+	/*BOTOIAK*/
+	ul{
+			padding: 0px;
+		}
 	li{
 		display: inline;
 		list-style-type: none;
 		border: 2px solid black;
-		padding: 7px;
+		padding: 4px;
 	 	border-radius: 13px;	
 	 	background-color: white;
-	  	font:bold 20px cursive;	  		
+	  	font:bold 10px cursive;	  		
 	}
-
-	/*NABIGATZAILEAREN BOTOIEN ANIMAZIOAK*/
-
+	li>a{text-decoration: none; 
+	  color:black;
+	}
+	
+	/*BOTOIEN ANIMAZIOA*/
 	li.index:hover{animation: anim 1s;	background-color: #229954 ;
 	}
 	li:hover{animation: anim 1s; background-color: #FE8B19;
@@ -81,55 +81,89 @@ header,nav,footer,aside,article{
 	@keyframes anim {10% {padding: 11px; margin:-4px;}	
 	}
 			
-	li>a{text-decoration: none; 
-	  color:black;
-	}
-
+	
+	/*KUTXAK*/	
 	section{
 		display: flex;
 	}
 	
 	
-	#art1, aside{
+	article, aside{
 		display: inline-block;
 		padding-top: 2%;
 	}
 
-	#art1{
+	article{
 		flex:4;
 		padding: 3%;
 		text-align: left;
 		background-color: white;
 		border-top-left-radius: 20px;
 	}
-	
 
+	h3{
+		font:bold 15px cursive;	
+	}
 
-/*ASIDE------------------------------------------------------*/
+		p{	margin-left: 3%;
+		margin-right: 2%;
+	}
 
+	i{	text-align: center;
+		font-weight: bold;
+	}
+	gris{
+		color:#626262;
+	}
+	#aphref{
+		text-decoration: none;
+		font-weight: bold;
+		color:rgba(245,27,49,1);
+	}
+	.argazki{
+		border: solid 1px black;
+		border-radius: 13px;
+		width: 80%;
+		margin-left: 10%;
+		-webkit-box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.75);
+		box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.75);
+	}
+
+	.argazki:hover{ 
+    	-webkit-transform: scale(1.7);
+    	transform: scale(1.7);
+    	margin: 25%;
+	}
+
+	/*ASIDE--------------------------------------------------*/	
 	aside{
 		flex: 1;
 		display: inline-block;
 		font:bold 15px cursive;	 
 		border-top-right-radius: 20px;
 	}
-
+	/*ASIDE-KO ARGAZKIA*/
 	.asideimg{
 		width: 80%;
 	}
+	.asideimg2{
+		width: 80%;
+		margin-top:30%; 
+	}
 	h4>a{
 		color:green;
+		font-size: 13px;
+		margin: 5%;
 	}
 
-	/*ASIDEAREN ANIMAZIOA*/
-
+	/*ASIDE-AREN ANIMAZIOAK*/
 	#asideindex{animation: animindex 5s infinite;
 	}
 	@keyframes animindex {0% {background-color: #28B463;}
 						   50%{background-color: white;}
 						   100%{background-color: #28B463;}
 	}
-
 	#asideprox{animation: animProx 5s infinite;
 	}
 	@keyframes animProx {0% {background-color: #fa9355;}
@@ -148,22 +182,16 @@ header,nav,footer,aside,article{
 						   50%{background-color: white;}
 						   100%{background-color: #e35803;}
 	}
-	/*-----------------------------------------------------*/
 
-
-/*FOOTER----------------------------------------------------*/
-
+	/*ORRI-OINA-----------------------------------------------*/
 	footer{
 		padding: 2%;
-		font-size: 13px;
 		background-color: #FE8B19;
 		max-height: 45px;
 		font:bold 10px cursive;
 		border-radius: 0px 0px 25px 25px;
 	}
-	
-	/*FOOTERRAREN KOLOREAK*/
-
+	/*ORRI-OINAREN KOLOREA*/
 	.proxmoxFooter{
 		background: -moz-linear-gradient(left,  rgba(255,87,3,1) 0%, rgba(255,255,255,1) 100%);
 		background: -webkit-gradient(linear, 0% 100%, 100% 0%, from(rgba(255,87,3,1)), to(#ffffff));
@@ -178,4 +206,8 @@ header,nav,footer,aside,article{
 	.githubFooter{
 		background: -moz-linear-gradient(left, rgba(99,97,99,1) 0%, rgba(99,97,99,1) 9%, rgba(45,185,224,1) 53%, rgba(255,255,255,1) 100%);		max-height: 30px;
 		background: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#323232), to(rgba(45,185,224,1)));
+	}
+	.indexFooter{
+		background: -moz-linear-gradient(left, rgba(40,180,99,1) 0%, rgba(74,230,139,1) 50%, rgba(140,255,188,1) 68%, rgba(255,255,255,1) 100%);
+		background: -webkit-linear-gradient(left, rgba(40,180,99,1) 0%, rgba(74,230,139,1) 50%, rgba(140,255,188,1) 68%, rgba(255,255,255,1) 100%);
 	}

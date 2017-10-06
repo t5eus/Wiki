@@ -1,11 +1,4 @@
-
-body{
-	background-color: #B6B6B6;
-	margin: 8%;
-	margin-top: 5%;
-	text-align: center;
-}
-
+/*Goiburua---------------------------------*/
 header{
 	background-color: white;
 	min-height: 70px;
@@ -15,86 +8,138 @@ header{
 	margin-left: 9%;
 	border-radius: 5px 20px;
 }
+	
+	/*Tituluko argazkia*/
+		.imgHeader{
+			height: 15%;
+			width: 40%;
+			min-width: 200px;
+			max-width: 500px;
+			min-height: 70px;
+		}
 
-.imgHeader{
-	height: 15%;
-	width: 40%;
-	min-width: 200px;
-	max-width: 500px;
-	min-height: 70px;
+/*GORPUTZA--------------------------------------*/
+body{
+	background-color: #B6B6B6;
+	margin: 8%;
+	margin-top: 5%;
+	text-align: center;
+	font-size: 20px;
 }
 
-header,nav,footer,aside,article{
-	border: 2px solid black;
-}
-
-	nav{
-		height: 60px;
-		width: 80%;
-		margin-top: 2%;
-		margin-left: 10%;
-		margin-bottom: -3px;
-		text-align: center;
-		background-color: grey;
-		border-radius: 30px 30px 0px 0px;
-	}
-
-	#navprox{background-color: #fa9355;
-	}
-	#navgithub{background-color: #7ecdd6;
-	}
-	#navapache{background-color: #e35803;
-	}
-	#navindex{background-color: #28B463;
-	}
-
-	li{
-		display: inline;
-		list-style-type: none;
+	/*BORDEAK*/
+	header,nav,footer,aside,article{
 		border: 2px solid black;
-		padding: 7px;
-	 	border-radius: 13px;	
-	 	background-color: white;
-	  	font:bold 20px cursive;	  		
-	}
-	li:hover{animation: anim 1s; background-color: #FE8B19;
-	}
-	li.git:hover{animation: anim 1s; background-color: rgba(45,185,224,1);
-	}
-	li.apache:hover{animation: anim 1s;	background-color: rgba(245,27,49,1);
-	}
-	li.index:hover{animation: anim 1s;	background-color: #229954 ;
 	}
 
-	@keyframes anim {10% {padding: 11px; margin:-4px;}	
-	}
-			
-	li>a{text-decoration: none; 
-	  color:black;
-	}
 
+/*NABIGATZAILEA-------------------------------------*/
+nav{
+	height: 60px;
+	width: 80%;
+	margin-top: 2%;
+	margin-left: 10%;
+	margin-bottom: -3px;
+	text-align: center;
+	border-radius: 30px 30px 0px 0px;
+}
+		/*NABIGATZAILEAREN KOLOREAK*/
+		#navprox{background-color: #fa9355;
+		}
+		#navgithub{background-color: #7ecdd6;
+		}
+		#navapache{background-color: #e35803;
+		}
+		#navindex{background-color: #28B463;
+		}
+		
+		/*BOTOIAK*/
+		ul{
+			padding: 0px;
+		}
+		li{
+			display: inline;
+			list-style-type: none;
+			border: 2px solid black;
+			padding: 7px;
+		 	border-radius: 13px;	
+		 	background-color: white;
+		  	font:bold 20px cursive;		
+		}
+		li>a{text-decoration: none; 
+		  color:black;
+		}
+
+		/*BOTOIEN ANIMAZIOA*/
+		li:hover{animation: anim 1s; background-color: #FE8B19;
+		}
+		li.git:hover{animation: anim 1s; background-color: rgba(45,185,224,1);
+		}
+		li.apache:hover{animation: anim 1s;	background-color: rgba(245,27,49,1);
+		}
+		li.index:hover{animation: anim 1s;	background-color: #229954 ;
+		}
+		@keyframes anim {10% {padding: 11px; margin:-4px;}	
+		}
+		
+/*KUTXAK*/	
 	section{
 		display: flex;
 	}
-	
-	
-	#art1, aside{
+
+	article, aside{
 		display: inline-block;
+		padding-top: 2%;
 	}
 
-	#art1{
+	article{
+		flex:4;
 		padding: 3%;
 		text-align: left;
 		background-color: white;
 		border-top-left-radius: 20px;
 	}
+	
+	h3{
+		font:bold 25px cursive;	
+	}
+
+	p{	margin-left: 3%;
+		margin-right: 2%;
+	}
+
+	i{	text-align: center;
+		font-weight: bold;
+	}
+	gris{
+		color:#626262;
+	}
+	#aphref{
+		text-decoration: none;
+		font-weight: bold;
+		color:rgba(245,27,49,1);
+	}
+
+	/*FOTOS CAPTURA*/
+	.argazki{
+		border: solid 1px black;
+		border-radius: 13px;
+		width: 80%;
+		margin-left: 10%;
+
+		-webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+		box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+	}
+	
+/*ASIDE--------------------------------------------------*/	
 	aside{
 		flex: 1;
 		display: inline-block;
 		font:bold 15px cursive;	 
 		border-top-right-radius: 20px;
 	}
-
+	/*ASIDE-KO ARGAZKIA*/
 	.asideimg{
 		width: 80%;
 	}
@@ -106,13 +151,13 @@ header,nav,footer,aside,article{
 		color:green;
 	}
 
+	/*ASIDE-AREN ANIMAZIOAK*/
 	#asideindex{animation: animindex 5s infinite;
 	}
 	@keyframes animindex {0% {background-color: #28B463;}
 						   50%{background-color: white;}
 						   100%{background-color: #28B463;}
 	}
-
 	#asideprox{animation: animProx 5s infinite;
 	}
 	@keyframes animProx {0% {background-color: #fa9355;}
@@ -132,13 +177,21 @@ header,nav,footer,aside,article{
 						   100%{background-color: #e35803;}
 	}
 	
+
+/*ORRI-OINA-----------------------------------------------*/
 	footer{
 		padding: 2%;
 		font-size: 13px;
 		background-color: #FE8B19;
 		max-height: 45px;
-		font:bold 10px cursive;
+		font:bold 15px cursive;
 		border-radius: 0px 0px 25px 25px;
+	}
+
+	/*ORRI-OINAREN KOLOREA*/
+	.indexFooter{
+		background: -moz-linear-gradient(left, rgba(40,180,99,1) 0%, rgba(74,230,139,1) 50%, rgba(140,255,188,1) 68%, rgba(255,255,255,1) 100%);
+		background: -webkit-linear-gradient(left, rgba(40,180,99,1) 0%, rgba(74,230,139,1) 50%, rgba(140,255,188,1) 68%, rgba(255,255,255,1) 100%);
 	}
 
 	.proxmoxFooter{
@@ -156,8 +209,5 @@ header,nav,footer,aside,article{
 		background: -moz-linear-gradient(left, rgba(99,97,99,1) 0%, rgba(99,97,99,1) 9%, rgba(45,185,224,1) 53%, rgba(255,255,255,1) 100%);		max-height: 30px;
 		background: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#323232), to(rgba(45,185,224,1)));
 	}
-	.indexFooter{
-		background: -moz-linear-gradient(left, rgba(40,180,99,1) 0%, rgba(74,230,139,1) 50%, rgba(140,255,188,1) 68%, rgba(255,255,255,1) 100%);
-		background: -webkit-linear-gradient(left, rgba(40,180,99,1) 0%, rgba(74,230,139,1) 50%, rgba(140,255,188,1) 68%, rgba(255,255,255,1) 100%);
-	}
+	
 
